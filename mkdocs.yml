@@ -1,0 +1,99 @@
+site_name: LabNotes
+site_url: https://example.com_or_my.github
+repo_url: https://github.com/squidfunk/mkdocs-material # url link of ripo in navbar
+repo_name: squidfunk/mkdocs-material # name of ripo to be displayed in navbar
+
+
+nav:
+  - Home:
+    -  Hi: "index.md"
+  - Tab2: "Tab2.md"
+  - Tab3: "Tab3.md"
+  - Tab4: 
+    - sub1:
+      - sub2: 
+        - sub3: 
+          - sub4: "Tab4.md"
+
+
+theme: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color 
+  name: material
+  favicon: assets/NiigataUicon.png #small icon in the "browser`s" tap.Save @ /dir  
+  features:
+    #- navigation.instant
+    - navigation.tabs #Nav tabs on top
+    - navigation.tabs.sticky # Keeps top nav menu from hiding.
+    #- header.autohide # Hides all top menu.
+    #- navigation.sections  #uncollapse all tab sections.
+    - navigation.top
+
+  palette:
+    #primary: green # Color of the Header
+    #accent: red # Colors change on hover. 
+    # Palette toggle for light mode
+    - primary: Default  # The original was scheme: Default 
+      accent: red # Colors change on hover. 
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      accent: light green # Colors change on hover. 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        accent: red # Colors change on hover. 
+  logo: # assets/logo.png
+        assets/NiigataUicon.png
+  icon:
+    repo: fontawesome/brands/git-alt # repo icon
+
+
+extra:
+  homepage: https://www.niigata-u.ac.jp/ # url for the logo icon
+
+
+  
+
+#include_sidebar: true
+
+#===================================================================================
+# Mkdocs Markdown Extentions, Plugins & extras
+#===================================================================================
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      # insert a blank space before the character
+      permalink: "#"
+
+plugins:
+  - glightbox # istall requied: images/lightbox
+  - search # add search box.
+  - i18n: # language plugin. 
+      default_language: en
+      languages:
+        en: English
+        ja: 日本語
+        es: Español
+

@@ -1,0 +1,311 @@
+---
+title: "Preparation"
+author: "Marcelo Rosales"
+date: "2022-08-26"
+---
+
+# Tab2 Example
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown TIps
+
+the keyboard shortcut Ctrl + Alt + I (OS X: Cmd + Option + I)
+
+```{r, echo=FALSE, eval=FALSE}
+
+```
+
+This runs command lines here in the file, below the chunk, and runs all commands at once.
+
+```{sh, echo=FALSE, eval=FALSE}
+pwd
+brew --version  
+```
+
+You can run commands line by line (++cmd+enter++) in .R file only.
+It requires the `system2(command = "command_name")` code line, result will be display in `console` and below the code chunk all commands at once (no line by line option). 
+
+`{r, echo=FALSE, eval=FALSE}`  
+
+```{r, echo=FALSE, eval=FALSE}
+system2(command = "ls")
+system2(command = "pwd")
+```
+
+`r`  
+
+```r
+system2(command = "ls")
+system2(command = "pwd")
+```
+
+`sh`   
+
+```sh
+ls 
+pwd 
+git commit -m "message"
+```
+
+`{yml}`
+
+```{yml}
+site_name: LabNotes
+site_url: https://example.com_or_my.github
+```
+
+`yml`
+
+```yml
+site_name: LabNotes
+site_url: https://example.com_or_my.github
+```
+
+
+## Plan 220826
+
+[ ] Create all the files in .Rmd as normal (in Box sync service) as bs4_book 
+  Use Rstudio::New Project. 
+  mkdocs new LabNotes....
+[ ] Build site in bs4 -> Converts .Rmd to .m -> Creates a folder with all converted .md files (all files in Box Sync, do NOT connect with git or GitHub)
+[ ] Create Mkdocs repositories in /documents/GitHub/ 
+[ ] Confect them to a GitHub repo  
+[ ] Use symlinks for the .md files stored in doc/github/ folders 
+[ ] Make GitHub commits as normal?
+[ ] Build and deploy site as normal?
+
+:::{.note}  
+**Installed required (>_)**  
+brew --version  
+python --version  
+brew list <formula1> || brew install <formula1>  
+brew install python3  
+brew install python@3.10  
+pip --version  
+pip3 install --upgrade pip  
+pip3 install mkdoc  
+brew install mkdocs (error)   
+pip3 install mkdocs-material  
+Other Plugins:  
+pip install mkdocs-static-i18n  
+pip install mkdocs-material  
+
+**Create a site with Terminal (>_)**    
+mkdocs -h  (help)  
+mkdocs new {dir-name}   
+cd {dir-name}
+	ls  
+	tree  
+mkdocs serve 
+Cnt+C 
+	+ code  .  
+	+ rstudio . ?
+	+ open -na Rstudio  
+	+ open myproject.Rproj  
+		- Modify yml (simple, just to check if render)
+		- Theme, nav, plugs  
+		- Create Tab2.md, Tab3.md, Tab4.md for trial
+
+```sh
+site_name: LabNotes
+site_url: https://example.com_or_my.github
+repo_url: https://github.com/squidfunk/mkdocs-material # url link of ripo in navbar
+repo_name: squidfunk/mkdocs-material # name of ripo to be displayed in navbar
+
+
+nav:
+  - Home:
+    -  Hi: "index.md"
+  - Tab2: "Tab2.md"
+  - Tab3: "Tab3.md"
+  - Tab4: 
+    - sub1:
+      - sub2: 
+        - sub3: 
+          - sub4: "Tab4.md"
+
+
+theme: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color 
+  name: material
+  favicon: assets/NiigataUicon.png # small icon in the "browser`s" tap. Save @ /dir.   
+  features:
+#    - navigation.instant
+    - navigation.tabs #Nav tabs on top
+    - navigation.tabs.sticky # Keeps top nav menu from hiding.
+    #- header.autohide # Hides all top menu.
+    #- navigation.sections  #uncollapse all tab sections.
+    - navigation.top
+
+  palette:
+    #primary: green # Color of the Header
+    #accent: red # Colors change on hover. 
+    # Palette toggle for light mode
+    - primary: Default  # The original was scheme: Default 
+      accent: red # Colors change on hover. 
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      accent: light green # Colors change on hover. 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        accent: red # Colors change on hover. 
+  logo: # assets/logo.png
+        assets/NiigataUicon.png
+  icon:
+    repo: fontawesome/brands/git-alt # repo icon
+
+
+extra:
+  homepage: https://www.niigata-u.ac.jp/ # url for the logo icon
+
+
+  
+
+#include_sidebar: true
+
+#===================================================================================#
+# Mkdocs Markdown Extentions, Plugins & extras
+#===================================================================================#
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      # insert a blank space before the character
+      permalink: "#"
+
+plugins:
+  - glightbox # istall requied: images/lightbox
+  - search # add search box.
+  - i18n: # language plugin. 
+      default_language: en
+      languages:
+        en: English
+        ja: 日本語
+        es: Español
+
+
+```
+		- Add content file  
+mkdocs serve 
+Cnt+C 
+
+
+>mkdocs build
+>mkdocs gh-deploy
+
+
+**In github.com:**  
+create git repo in github.com (follow recommendation of Hernandez?)  
+1. Github > create new repo > 
+  name: {x: demo_docmaker } > 
+  description {dockmaker demo} > 
+  ©Public > 
+  <© Add readme file > 
+  <© Add .gitignore: ˇ{R} > 
+  © Create repository  
+  
+mkdocs build
+
+> 1. Repo settings > Pages > 
+  Source: Deploy form a branch > 
+  ˇBranch: © main > /(root) > ©save (new page is created)  
+1. Got to // Code > code > clone > htpps (copy github page address)  
+  https://github.com/MarceloRosales/mk_LabNotes.git
+  https://github.com/MarceloRosales/mkd_LabNotes2.git
+  https://github.com/MarceloRosales/mk_LabNotes2.git
+  https://github.com/MarceloRosales/LabNotes3.git
+
+
+**Connect Mkdocs to Git >_:**  
+git init  
+git add .  
+git status  
+
+**Connect Mkdocs to Github repository >_:**  
+git remote add origin {git_url}  
+
+> Sometime requires:
+git config --global user.name “MyGitAccount”  
+git config --global user.email “myemail.com”  
+git config credential.helper store  
+gedit gitignore (edit gitignore to don’t track files…??)  
+
+git commit -m “Initial Commit”  
+git status (empty) 
+git push origin master  
+
+> Sometime requires:
+type github username:
+type github Password:
+(push from local master branch to remote master branch)  
+
+**Mkdocs site build and deploy in >_:**  
+mkdocs build  
+mkdocs gh-deploy  
+
+
+**In github.com:**  
+Make sure deploy branch is gh-pages.  
+1. Repo settings > Pages > 
+  Source: Deploy form a branch > 
+  ˇBranch: © **gh-paages** > /(root) > ©save (new page is created)  
+
+
+===================================  
+**After first commit:**  
+`Modify code. (and save files)`  
+mkdocs build  
+mkdocs gh-deploy   
+git add .  
+git status  
+git commit -m “commit message”    
+git push origin master   
+
+**Other git commands:**  
+git reflog (past git logs)  
+git checkout -b other-branch (Switch to a new branch)  
+git branch -a (lists of branches)  
+rm -fr .git (remove git files)  
+git config --global user.name "MarceloRosales"  
+git config --global user.email "...@hotmail.com"  
+git config credential.helper store  
+git commit -m "1st commit"  
+git log # If want to revert to a preview’s version, Copy hash click Q to quit.  
+git checkout {hash copied from log}  
+git checkout -b {new branch name}  # Create a new branch.  
+git branch {new branch name} {hash}  # Create new branch, if revert to previous, add hash  
+git checkout {branch name}  # To change branches  
+git merge {branch name}  # merge branch to main  
+:::
+
+
+
+
+
+

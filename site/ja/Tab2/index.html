@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Marcelo Rosales" name="author"/>
+<link href="https://example.com_or_my.github/ja/Tab2/" rel="canonical"/>
+<link href="../../assets/NiigataUicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-8.3.8" name="generator"/>
+<title>Preparation - LabNotes</title>
+<link href="../../assets/stylesheets/main.1d29e8d0.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="red" data-md-color-primary="default" data-md-color-scheme="" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#tab2-example">
+          コンテンツにスキップ
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="ヘッダー" class="md-header__inner md-grid">
+<a aria-label="LabNotes" class="md-header__button md-logo" data-md-component="logo" href="https://www.niigata-u.ac.jp/" title="LabNotes">
+<img alt="logo" src="../../assets/NiigataUicon.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            LabNotes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Preparation
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="red" data-md-color-media="" data-md-color-primary="default" data-md-color-scheme="" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="light-green" data-md-color-media="" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__option">
+<div class="md-select">
+<button aria-label="Select language" class="md-header__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"></path></svg>
+</button>
+<div class="md-select__inner">
+<ul class="md-select__list">
+<li class="md-select__item">
+<a class="md-select__link" href="../../Tab2/" hreflang="en">
+                    English
+                  </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="./" hreflang="ja">
+                    日本語
+                  </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="../../es/Tab2/" hreflang="es">
+                    Español
+                  </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="検索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="検索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="クリア" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            検索を初期化
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/squidfunk/mkdocs-material" title="リポジトリへ">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="タブ" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../">
+        Home
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="./">
+      Tab2
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../Tab3/">
+      Tab3
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../Tab4/">
+        Tab4
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="ナビゲーション" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LabNotes" class="md-nav__button md-logo" data-md-component="logo" href="https://www.niigata-u.ac.jp/" title="LabNotes">
+<img alt="logo" src="../../assets/NiigataUicon.png"/>
+</a>
+    LabNotes
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/squidfunk/mkdocs-material" title="リポジトリへ">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Home" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+        Hi
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Tab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Tab2
+      </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#r-markdown-tips">
+    R Markdown TIps
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#plan-220826">
+    Plan 220826
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Tab3/">
+        Tab3
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Tab4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Tab4" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Tab4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1">
+          sub1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="sub1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          sub1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_1" id="__nav_4_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1_1">
+          sub2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="sub2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_1_1">
+<span class="md-nav__icon md-icon"></span>
+          sub2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_1_1" id="__nav_4_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1_1_1">
+          sub3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="sub3" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_1_1_1">
+<span class="md-nav__icon md-icon"></span>
+          sub3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Tab4/">
+        sub4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#r-markdown-tips">
+    R Markdown TIps
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#plan-220826">
+    Plan 220826
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/squidfunk/mkdocs-material/edit/master/docs/Tab2.md" title="編集">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="tab2-example">Tab2 Example<a class="headerlink" href="#tab2-example" title="Permanent link">#</a></h1>
+<div class="highlight"><pre><span></span><code>knitr::opts_chunk$set(echo = TRUE)
+</code></pre></div>
+<h2 id="r-markdown-tips">R Markdown TIps<a class="headerlink" href="#r-markdown-tips" title="Permanent link">#</a></h2>
+<p>the keyboard shortcut Ctrl + Alt + I (OS X: Cmd + Option + I)</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>This runs command lines here in the file, below the chunk, and runs all commands at once.</p>
+<div class="highlight"><pre><span></span><code>pwd
+brew --version  
+</code></pre></div>
+<p>You can run commands line by line (<span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span>) in .R file only.
+It requires the <code>system2(command = "command_name")</code> code line, result will be display in <code>console</code> and below the code chunk all commands at once (no line by line option). </p>
+<p><code>{r, echo=FALSE, eval=FALSE}</code> </p>
+<div class="highlight"><pre><span></span><code>system2(command = "ls")
+system2(command = "pwd")
+</code></pre></div>
+<p><code>r</code> </p>
+<div class="highlight"><pre><span></span><code><span class="nf">system2</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s">"ls"</span><span class="p">)</span>
+<span class="nf">system2</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s">"pwd"</span><span class="p">)</span>
+</code></pre></div>
+<p><code>sh</code> </p>
+<div class="highlight"><pre><span></span><code>ls 
+<span class="nb">pwd</span> 
+git commit -m <span class="s2">"message"</span>
+</code></pre></div>
+<p><code>{yml}</code></p>
+<div class="highlight"><pre><span></span><code>site_name: LabNotes
+site_url: https://example.com_or_my.github
+</code></pre></div>
+<p><code>yml</code></p>
+<div class="highlight"><pre><span></span><code>site_name: LabNotes
+site_url: https://example.com_or_my.github
+</code></pre></div>
+<h2 id="plan-220826">Plan 220826<a class="headerlink" href="#plan-220826" title="Permanent link">#</a></h2>
+<p>[ ] Create all the files in .Rmd as normal (in Box sync service) as bs4_book 
+  Use Rstudio::New Project. 
+  mkdocs new LabNotes....
+[ ] Build site in bs4 -&gt; Converts .Rmd to .m -&gt; Creates a folder with all converted .md files (all files in Box Sync, do NOT connect with git or GitHub)
+[ ] Create Mkdocs repositories in /documents/GitHub/ 
+[ ] Confect them to a GitHub repo<br/>
+[ ] Use symlinks for the .md files stored in doc/github/ folders 
+[ ] Make GitHub commits as normal?
+[ ] Build and deploy site as normal?</p>
+<p>:::{.note}<br/>
+<strong>Installed required (&gt;_)</strong><br/>
+brew --version<br/>
+python --version<br/>
+brew list <formula1> || brew install <formula1><br/>
+brew install python3<br/>
+brew install python@3.10<br/>
+pip --version<br/>
+pip3 install --upgrade pip<br/>
+pip3 install mkdoc<br/>
+brew install mkdocs (error) <br/>
+pip3 install mkdocs-material<br/>
+Other Plugins:<br/>
+pip install mkdocs-static-i18n<br/>
+pip install mkdocs-material  </formula1></formula1></p>
+<p><strong>Create a site with Terminal (&gt;_)</strong> <br/>
+mkdocs -h  (help)<br/>
+mkdocs new {dir-name} <br/>
+cd {dir-name}
+    ls<br/>
+    tree<br/>
+mkdocs serve 
+Cnt+C 
+    + code  .<br/>
+    + rstudio . ?
+    + open -na Rstudio<br/>
+    + open myproject.Rproj<br/>
+        - Modify yml (simple, just to check if render)
+        - Theme, nav, plugs<br/>
+        - Create Tab2.md, Tab3.md, Tab4.md for trial</p>
+<p><div class="highlight"><pre><span></span><code>site_name: LabNotes
+site_url: https://example.com_or_my.github
+repo_url: https://github.com/squidfunk/mkdocs-material <span class="c1"># url link of ripo in navbar</span>
+repo_name: squidfunk/mkdocs-material <span class="c1"># name of ripo to be displayed in navbar</span>
+
+
+nav:
+  - Home:
+    -  Hi: <span class="s2">"index.md"</span>
+  - Tab2: <span class="s2">"Tab2.md"</span>
+  - Tab3: <span class="s2">"Tab3.md"</span>
+  - Tab4: 
+    - sub1:
+      - sub2: 
+        - sub3: 
+          - sub4: <span class="s2">"Tab4.md"</span>
+
+
+theme: <span class="c1"># https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color </span>
+  name: material
+  favicon: assets/NiigataUicon.png <span class="c1"># small icon in the "browser`s" tap. Save @ /dir.   </span>
+  features:
+<span class="c1">#    - navigation.instant</span>
+    - navigation.tabs <span class="c1">#Nav tabs on top</span>
+    - navigation.tabs.sticky <span class="c1"># Keeps top nav menu from hiding.</span>
+    <span class="c1">#- header.autohide # Hides all top menu.</span>
+    <span class="c1">#- navigation.sections  #uncollapse all tab sections.</span>
+    - navigation.top
+
+  palette:
+    <span class="c1">#primary: green # Color of the Header</span>
+    <span class="c1">#accent: red # Colors change on hover. </span>
+    <span class="c1"># Palette toggle for light mode</span>
+    - primary: Default  <span class="c1"># The original was scheme: Default </span>
+      accent: red <span class="c1"># Colors change on hover. </span>
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    <span class="c1"># Palette toggle for dark mode</span>
+    - scheme: slate
+      accent: light green <span class="c1"># Colors change on hover. </span>
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        accent: red <span class="c1"># Colors change on hover. </span>
+  logo: <span class="c1"># assets/logo.png</span>
+        assets/NiigataUicon.png
+  icon:
+    repo: fontawesome/brands/git-alt <span class="c1"># repo icon</span>
+
+
+extra:
+  homepage: https://www.niigata-u.ac.jp/ <span class="c1"># url for the logo icon</span>
+
+
+
+
+<span class="c1">#include_sidebar: true</span>
+
+<span class="c1">#===================================================================================#</span>
+<span class="c1"># Mkdocs Markdown Extentions, Plugins &amp; extras</span>
+<span class="c1">#===================================================================================#</span>
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: <span class="nb">true</span>
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: <span class="nb">true</span>
+  - toc:
+      <span class="c1"># insert a blank space before the character</span>
+      permalink: <span class="s2">"#"</span>
+
+plugins:
+  - glightbox <span class="c1"># istall requied: images/lightbox</span>
+  - search <span class="c1"># add search box.</span>
+  - i18n: <span class="c1"># language plugin. </span>
+      default_language: en
+      languages:
+        en: English
+        ja: 日本語
+        es: Español
+</code></pre></div>
+        - Add content file<br/>
+mkdocs serve 
+Cnt+C </p>
+<blockquote>
+<p>mkdocs build
+mkdocs gh-deploy</p>
+</blockquote>
+<p><strong>In github.com:</strong><br/>
+create git repo in github.com (follow recommendation of Hernandez?)<br/>
+1. Github &gt; create new repo &gt; 
+  name: {x: demo_docmaker } &gt; 
+  description {dockmaker demo} &gt; 
+  ©Public &gt; 
+  &lt;© Add readme file &gt; 
+  &lt;© Add .gitignore: ˇ{R} &gt; 
+  © Create repository  </p>
+<p>mkdocs build</p>
+<blockquote>
+<ol>
+<li>Repo settings &gt; Pages &gt; 
+  Source: Deploy form a branch &gt; 
+  ˇBranch: © main &gt; /(root) &gt; ©save (new page is created)  </li>
+<li>Got to // Code &gt; code &gt; clone &gt; htpps (copy github page address)<br/>
+  https://github.com/MarceloRosales/mk_LabNotes.git
+  https://github.com/MarceloRosales/mkd_LabNotes2.git
+  https://github.com/MarceloRosales/mk_LabNotes2.git
+  https://github.com/MarceloRosales/LabNotes3.git</li>
+</ol>
+</blockquote>
+<p><strong>Connect Mkdocs to Git &gt;_:</strong><br/>
+git init<br/>
+git add .<br/>
+git status  </p>
+<p><strong>Connect Mkdocs to Github repository &gt;_:</strong><br/>
+git remote add origin {git_url}  </p>
+<blockquote>
+<p>Sometime requires:
+git config --global user.name “MyGitAccount”<br/>
+git config --global user.email “myemail.com”<br/>
+git config credential.helper store<br/>
+gedit gitignore (edit gitignore to don’t track files…??)  </p>
+</blockquote>
+<p>git commit -m “Initial Commit”<br/>
+git status (empty) 
+git push origin master  </p>
+<blockquote>
+<p>Sometime requires:
+type github username:
+type github Password:
+(push from local master branch to remote master branch)  </p>
+</blockquote>
+<p><strong>Mkdocs site build and deploy in &gt;_:</strong><br/>
+mkdocs build<br/>
+mkdocs gh-deploy  </p>
+<p><strong>In github.com:</strong><br/>
+Make sure deploy branch is gh-pages.<br/>
+1. Repo settings &gt; Pages &gt; 
+  Source: Deploy form a branch &gt; 
+  ˇBranch: © <strong>gh-paages</strong> &gt; /(root) &gt; ©save (new page is created)  </p>
+<p>===================================<br/>
+<strong>After first commit:</strong><br/>
+<code>Modify code. (and save files)</code><br/>
+mkdocs build<br/>
+mkdocs gh-deploy <br/>
+git add .<br/>
+git status<br/>
+git commit -m “commit message”  <br/>
+git push origin master   </p>
+<p><strong>Other git commands:</strong><br/>
+git reflog (past git logs)<br/>
+git checkout -b other-branch (Switch to a new branch)<br/>
+git branch -a (lists of branches)<br/>
+rm -fr .git (remove git files)<br/>
+git config --global user.name "MarceloRosales"<br/>
+git config --global user.email "...@hotmail.com"<br/>
+git config credential.helper store<br/>
+git commit -m "1<sup>st</sup> commit"<br/>
+git log # If want to revert to a preview’s version, Copy hash click Q to quit.<br/>
+git checkout {hash copied from log}<br/>
+git checkout -b {new branch name}  # Create a new branch.<br/>
+git branch {new branch name} {hash}  # Create new branch, if revert to previous, add hash<br/>
+git checkout {branch name}  # To change branches<br/>
+git merge {branch name}  # merge branch to main<br/>
+:::</p>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="フッター" class="md-footer__inner md-grid">
+<a aria-label="前: Hi" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                前
+              </span>
+              Hi
+            </div>
+</div>
+</a>
+<a aria-label="次: Tab3" class="md-footer__link md-footer__link--next" href="../Tab3/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                次
+              </span>
+              Tab3
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>
