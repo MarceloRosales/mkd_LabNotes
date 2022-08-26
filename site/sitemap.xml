@@ -36,4 +36,13 @@
          <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/03-Tab4/"/>
          
     </url>
+    <url>
+         <loc>https://example.com_or_my.github/08-Preparation/</loc>
+         <lastmod>2022-08-26</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/08-Preparation/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/08-Preparation/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/08-Preparation/"/>
+         
+    </url>
 </urlset>
