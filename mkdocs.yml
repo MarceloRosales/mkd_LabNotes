@@ -7,13 +7,13 @@ repo_name: squidfunk/mkdocs-material # name of ripo to be displayed in navbar
 nav:
   - Home:
     -  Hi: "index.md"
-  - Tab2: "Tab2.md"
-  - Tab3: "Tab3.md"
+  - Tab2: "01-Tab2.md"
+  - Tab3: "02-Tab3.md"
   - Tab4: 
     - sub1:
       - sub2: 
         - sub3: 
-          - sub4: "Tab4.md"
+          - sub4: "03-Tab4.md"
 
 
 theme: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color 
