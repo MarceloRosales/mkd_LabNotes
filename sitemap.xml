@@ -10,30 +10,30 @@
          
     </url>
     <url>
-         <loc>https://example.com_or_my.github/Tab2/</loc>
+         <loc>https://example.com_or_my.github/01-Tab2/</loc>
          <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/Tab2/"/>
-         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/Tab2/"/>
-         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/Tab2/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/01-Tab2/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/01-Tab2/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/01-Tab2/"/>
          
     </url>
     <url>
-         <loc>https://example.com_or_my.github/Tab3/</loc>
+         <loc>https://example.com_or_my.github/02-Tab3/</loc>
          <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/Tab3/"/>
-         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/Tab3/"/>
-         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/Tab3/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/02-Tab3/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/02-Tab3/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/02-Tab3/"/>
          
     </url>
     <url>
-         <loc>https://example.com_or_my.github/Tab4/</loc>
+         <loc>https://example.com_or_my.github/03-Tab4/</loc>
          <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/Tab4/"/>
-         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/Tab4/"/>
-         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/Tab4/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://example.com_or_my.github/en/03-Tab4/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="https://example.com_or_my.github/ja/03-Tab4/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://example.com_or_my.github/es/03-Tab4/"/>
          
     </url>
 </urlset>
